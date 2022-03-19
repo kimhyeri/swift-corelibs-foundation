@@ -157,8 +157,7 @@ extension AffineTransform {
         return AffineTransform(
             m11: (t.m11 * m.m11) + (t.m12 * m.m21), m12: (t.m11 * m.m12) + (t.m12 * m.m22),
             m21: (t.m21 * m.m11) + (t.m22 * m.m21), m22: (t.m21 * m.m12) + (t.m22 * m.m22),
-            tX: (t.tX * m.m11) + (t.tY * m.m21) + m.tX,
-            tY: (t.tX * m.m12) + (t.tY * m.m22) + m.tY
+            tX: (t.tX * m.m11) + (t.tY * m.m21) + m.tX, tY: (t.tX * m.m12) + (t.tY * m.m22) + m.tY
         )
     }
 
